@@ -51,8 +51,9 @@ BOARD_KERNEL_TAGS_OFFSET := 0x02000000
 BOARD_RAMDISK_OFFSET     := 0x02200000
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/lge/msm8996
+BOARD_RAMDISK_OFFSET := 0x02200000
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-
+TARGET_KERNEL_SOURCE := kernel/lge/msm8996
 # Audio
 BOARD_USES_ALSA_AUDIO := true
 # Temporary: Use AOSP audio HAL features as advanced features are currently broken
