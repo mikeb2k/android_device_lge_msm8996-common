@@ -10,15 +10,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=1 \
     vendor.audio_hal.period_size=192 \
-    ro.vendor.audio.sdk.fluencetype=fluencepro \
+    ro.vendor.audio.sdk.fluencetype=fluence \
     persist.vendor.audio.fluence.voicecall=true \
-    persist.vendor.audio.fluence.voicerec=true \
+    persist.vendor.audio.fluence.voicerec=false \
     persist.vendor.audio.fluence.speaker=true \
     vendor.audio.tunnel.encode=false \
     vendor.audio.offload.buffer.size.kb=64 \
     vendor.audio.offload.pcm.16bit.enable=true \
     vendor.audio.offload.pcm.24bit.enable=true \
-    audio.offload.video=true \
+    audio.offload.video=false \
     vendor.audio.offload.track.enable=true \
     audio.deep_buffer.media=true \
     vendor.voice.path.for.pcm.voip=true \
@@ -37,8 +37,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.bt.enable.splita2dp=false \
     persist.vendor.audio.speaker.prot.enable=true \
     persist.vendor.audio.spkr.cal.duration=5 \
-    ro.config.media_vol_steps=25 \
-    audio.heap.size.multiplier=7
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -90,9 +88,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Fluence
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.qc.sdk.audio.fluencetype=fluencepro \
+    ro.qc.sdk.audio.fluencetype=fluence \
     persist.audio.fluence.voicecall=true \
-    persist.audio.fluence.voicerec=true \
+    persist.audio.fluence.voicerec=false \
     persist.audio.fluence.speaker=true
 
 # GPS
