@@ -301,6 +301,8 @@ on boot
     chown system system /sys/class/graphics/fb0/keep_aod
     chmod 664 /sys/class/graphics/fb0/keep_aod
     chown system system /sys/class/graphics/fb0/cur_panel_mode
+    chown system sytem  /sys/class/graphics/fb1/cur_panel_mode
+    chmod 644 /sys/class/graphics/fb1/cur_panel_mode
     chmod 644 /sys/class/graphics/fb0/cur_panel_mode
     chown system system /sys/class/leds/lcd-backlight-ex/brightness
     chmod 664 /sys/class/leds/lcd-backlight-ex/brightness
@@ -983,3 +985,20 @@ on property:sys.boot_completed=1
     setprop sys.io.scheduler "bfq"
     # Set idle GPU to 133 Mhz
     write /sys/class/kgsl/kgsl-3d0/default_pwrlevel 6
+
+service aodcommon-hal-1-0 /system/bin/hw/vendor.lge.hardware.aod.aodcommon@1.0-service
+    class hal
+    user system
+    group system
+
+service aodpower-hal-1-0 /system/bin/hw/vendor.lge.hardware.aod.aodpower@1.0-service
+    class hal
+    user system
+    group system
+
+service aodview-hal-1-0 /system/bin/hw/vendor.lge.hardware.aod.aodview@1.0-service
+    class hal
+    user system
+    group system
+
+

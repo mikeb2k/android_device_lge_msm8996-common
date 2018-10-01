@@ -476,4 +476,31 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl">
+        <name>vendor.lge.hardware.aod.aodcommon</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IAodCommon</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lge.hardware.aod.aodpower</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IAodPower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lge.hardware.aod.aodview</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IAodView</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </manifest>
