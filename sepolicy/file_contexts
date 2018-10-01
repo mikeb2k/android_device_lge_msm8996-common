@@ -91,3 +91,8 @@
 /(vendor|system/vendor)/bin/perfd                                   u:object_r:perfd_exec:s0
 /data/misc/perfd(/.*)?                                              u:object_r:perfd_data_file:s0
 /data/system/perfd(/.*)?                                            u:object_r:perfd_data_file:s0
+
+# AOD
+/system/vendor/bin/hw/vendor\.lge\.hardware\.aod\.aodcommon@1\.0-service   u:object_r:vendor_file:s0
+/system/vendor/bin/hw/vendor\.lge\.hardware\.aod\.aodpower@1\.0-service    u:object_r:vendor_file:s0
+/system/vendor/bin/hw/vendor\.lge\.hardware\.aod\.aodview@1\.0-service     u:object_r:vendor_file:s0
