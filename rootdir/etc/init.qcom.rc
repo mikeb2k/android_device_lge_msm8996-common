@@ -985,20 +985,3 @@ on property:sys.boot_completed=1
     setprop sys.io.scheduler "bfq"
     # Set idle GPU to 133 Mhz
     write /sys/class/kgsl/kgsl-3d0/default_pwrlevel 6
-
-service aodcommon-hal-1-0 /system/bin/hw/vendor.lge.hardware.aod.aodcommon@1.0-service
-    class hal
-    user system
-    group system
-
-service aodpower-hal-1-0 /system/bin/hw/vendor.lge.hardware.aod.aodpower@1.0-service
-    class hal
-    user system
-    group system
-
-service aodview-hal-1-0 /system/bin/hw/vendor.lge.hardware.aod.aodview@1.0-service
-    class hal
-    user system
-    group system
-
-
