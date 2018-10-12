@@ -247,6 +247,25 @@ on boot
     # FST Manager uses bond0
     chown wifi wifi /sys/class/net/bond0/bonding/queue_id
 
+    # Lights HAL
+    chown system:system /vendor/bin/hw/vendor.lge.hardware.aod.aodview@1.0-service
+    chown system:system /vendor/bin/hw/vendor.lge.hardware.display.general@1.0-service
+    chown system:system /vendor/bin/hw/vendor.lge.hardware.aod.aodcommon@1.0-service
+    chown system:system /vendor/bin/hw/vendor.lge.hardware.display.uevent@1.0-service
+    chown system:system /vendor/bin/hw/vendor.lge.hardware.light@1.0-service
+    chown system:system /vendor/bin/hw/vendor.lge.hardware.display.tune@1.0-service
+    chown system:system /vendor/bin/hw/vendor.lge.hardware.display.brightness@1.0-service
+    chown system:system /vendor/bin/hw/vendor.lge.hardware.aod.aodpower@1.0-service
+    
+    chmod 644 /vendor/bin/hw/vendor.lge.hardware.aod.aodview@1.0-service
+    chmod 644 /vendor/bin/hw/vendor.lge.hardware.display.general@1.0-service
+    chmod 644 /vendor/bin/hw/vendor.lge.hardware.aod.aodcommon@1.0-service
+    chmod 644 /vendor/bin/hw/vendor.lge.hardware.display.uevent@1.0-service
+    chmod 644 /vendor/bin/hw/vendor.lge.hardware.light@1.0-service
+    chmod 644 /vendor/bin/hw/vendor.lge.hardware.display.tune@1.0-service
+    chmod 644 /vendor/bin/hw/vendor.lge.hardware.display.brightness@1.0-service
+    chmod 644 /vendor/bin/hw/vendor.lge.hardware.aod.aodpower@1.0-service
+
     # Touch gestures
     chown system system /sys/devices/virtual/input/lge_touch/keyguard
     chmod 664 /sys/devices/virtual/input/lge_touch/keyguard
@@ -984,4 +1003,4 @@ on property:sys.boot_completed=1
     # Set BFQ I/O scheduler
     setprop sys.io.scheduler "bfq"
     # Set idle GPU to 133 Mhz
-    write /sys/class/kgsl/kgsl-3d0/default_pwrlevel 6
+    write /sys/class/kgsl/kgsl-3d0/default_pwrlevel 7
